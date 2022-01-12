@@ -3,5 +3,7 @@ from .import views
 
 #urls
 urlpatterns = [
-    path('', views.home)
+    path('', views.home, name='home'),
+    path('register/',views.registerPage, name="register"),
+    path('login/',views.loginPage, name="login")
 ]

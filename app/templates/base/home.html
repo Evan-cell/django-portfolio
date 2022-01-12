@@ -1,33 +1,65 @@
 {% extends 'base/base.html'%}
 {%block content%}
+<style>
+  .bg-light{
+    background: #23DF18;
+    background: -moz-linear-gradient(left, #23DF18 0%, #110290 50%, #C54017 100%);
+    background: -webkit-linear-gradient(left, #23DF18 0%, #110290 50%, #C54017 100%);
+    background: linear-gradient(to right, #23DF18 0%, #110290 50%, #C54017 100%);
+}
+body {
+  overflow-x: hidden;
+}
+
+</style>
+<nav class="navbar fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Evan's PortFolio Welcome</a>
+  </div>
+</nav>
+<br> <br>
 <div class="container">
     <br>
     <div class="row">
         <div class="col-md-3">
             <div class="card card-body" id="profile-wrapper">
-                <img id="profile-pic" src="https://scontent.fnbo9-1.fna.fbcdn.net/v/t39.30808-6/240720668_557953021920219_3376543160930745945_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHJ8uVCgdWGuw07Qf4BmWW1LHdzVUFgi2gsd3NVQWCLaEfrDDWm30p42mOXGsM4MY_RQF5oh7G5LUtFFomMWg01&_nc_ohc=vfU5IDSO_ZsAX_-IGJf&_nc_ht=scontent.fnbo9-1.fna&oh=6d3ea42eebfef0eec6fdc82339d1d98e&oe=61AD7090" alt="loading">
+                <img id="profile-pic" src="https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/240721816_557953238586864_5850842178903416705_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeHkjYlrZGZ5UBFMTZVn99KSjPVrik0kSpeM9WuKTSRKl4r14nJ2TWHgJLbLe-mzm-4z1kw4uQ7PX1qKhy0IdNLP&_nc_ohc=MrfUpwNMvv4AX9ucyAS&_nc_ht=scontent-mba1-1.xx&oh=00_AT8Ckp7CnmkTAf3PbxBfZA6_U4nX85H1e8SdoObgMjWMtQ&oe=61D9D274" alt="loading">
                 <hr>
                 <h4>Dev Kim</h4>
-                <p>Full stack developer ready and set to code</p>
+                <p>Full stack developer</p>
+                <span class="badge rounded-pill bg-danger">Ready and Set to Code</span>
             </div>
         </div>
+        <br>
         <div class="col-md-9">
             <div class="card card-body">
-                <h4>My first Job as a developer</h4>
+                <h4>Fun Developer Facts</h4>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ex fugit vel. Sint eligendi saepe sed commodi consequatur, cupiditate ipsum asperiores tempora eaque aliquid voluptas ullam quae, dicta suscipit voluptates?</p>
-                <br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt provident inventore fugit, doloremque velit mollitia expedita beatae autem blanditiis totam molestias soluta obcaecati quos porro officia neque nemo? Quia, ut.</p>
+                <p>Software developers spend more time learning as compared to others
+                  Software engineers have a higher rate of learning than other professions. This makes sense because, while change is rapid in all industries, it is swift in the ever-changing technology field.
+                  
+                  Software developers reported learning a new skill 48 % of the time, compared to 36 % of all professionals. They often spend more time on LinkedIn, with 45 % having recently updated their profile, compared to 32 % of the general population.</p>
                 <ul class="social-links">
-                    <li><i class="bi bi-facebook"></i></li>
-                    <li><i class="bi bi-whatsapp"></i></li>
-                    <li><i class="bi bi-instagram"></i></li>
-                    <li><i class="bi bi-twitter"></i></li>
-                    <li><i class="bi bi-github"></i></li>
+                    <li><a href="https://www.facebook.com/malcom.kim.35"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/ma.lcom1347/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/@EvanKimani19"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="https://github.com/Evan-cell"><i class="bi bi-github"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
+    <style>
+      .bi-github{
+        color: black;
+      }
+      .bi-instagram{
+        color: red;
+      }
+      .bi-whatsapp{
+        color: rgb(0, 238, 0);
+      }
+    </style>
     <br>
     <div class="row">
         <div class="col-md-6">
@@ -61,6 +93,7 @@
                   
             </div>
         </div>
+        <br>
         <div class="col-md-6">
             <div class="card card-body">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -75,11 +108,19 @@
                         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
                       </div>
                     </div>
+                    <h5>Developer Motivation</h5>
+                    <hr>
+                    <p>If you want to learn JavaScript, make this thing your number one priority. Every day you must read a few pages of your favorite JavaScript book or work on both personal or open-source projects that rely on JavaScript.
+
+                      Things don’t always go as planned but no matter what happens, you have to make steady progress everyday.
+                      
+                      Some days you’ll wake up not being able to write code or being stuck in a chapter in a book. But don’t worry. These things happen to everyone and there are other ways to compensate for the lack of practice.</p>
                   </div>
             </div>
         </div>
     </div>
     <br>
+    
     <div class="row">
         <div class="col-md-6">
             <div class="card card-body">
@@ -113,4 +154,55 @@
         </div>
     </div>
 </div>
+<br>
+<h3 class="text-white text-center">Some of my projects</h3>
+<div class="row">
+  <div class="col-md-4 p-2">
+    <div class="card card-body">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D22AQFgaBDHVFxOlg/feedshare-shrink_800/0/1641381367324?e=1644451200&v=beta&t=f6x_cvrBo1oM--gbPnRX4TgXq7Q0-m8kwO5cB5TGdcM" alt="">
+      <br>
+      <span class="badge rounded-pill bg-warning text-dark">Instagram clone</span>
+      <a class="p-2" href="https://github.com/Evan-cell/instagram"><button class="btn btn-info">Project link</button></a>
+    </div>
+  </div>
+  <div class="col-md-4 p-2">
+    <div class="card card-body">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D22AQHUrIMHfk5qNQ/feedshare-shrink_800/0/1641381297711?e=1644451200&v=beta&t=V5-2BKIlHvOf6bQwZbssrPCkLlFkNaZZQghf5oq7KOA" alt="">
+      <br>
+      <span class="badge bg-warning rounded-pill text-dark">Awwards</span>
+      <a class="p-2" href="https://github.com/Evan-cell/awwards"><button class="btn btn-info">Project link</button></a>
+    </div>
+  </div>
+  <div class="col-md-4 p-2">
+    <div class="card card-body">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D22AQFeJHBnAmaWIw/feedshare-shrink_800/0/1641381421273?e=1644451200&v=beta&t=eMw-k2kW8aXjEKLA1zuPaggu6PkNmPTlcrnvH2lKKQE" alt="">
+      <br>
+      <span class="badge bg-warning rounded-pill text-dark">Pitches</span>
+      <a class="p-2" href="https://github.com/Evan-cell/pitch-quotes"><button class="btn btn-info">Project link</button></a>
+    </div>
+  </div>
+  <div class="col-md-4 p-2">
+    <div class="card card-body">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D22AQEvEXofywndXQ/feedshare-shrink_800/0/1641381478612?e=1644451200&v=beta&t=JSV7VspnWLZmOCLkELnd452lgog3TbQolODw0WrV2Oc" alt="">
+      <br>
+      <span class="badge rounded-pill bg-warning text-dark">Goals</span>
+      <a class="p-2" href="https://github.com/Evan-cell/goals"><button class="btn btn-info">Project link</button></a>
+    </div>
+  </div>
+  <div class="col-md-4 p-2">
+    <div class="card card-body">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D22AQGrI40ZHJ_jxw/feedshare-shrink_800/0/1641391077441?e=1644451200&v=beta&t=scIAOjUmqADLnygoouYFs8vaGsq9tTNcxEsQ5syrdV4" alt="">
+      <br>
+      <span class="badge rounded-pill bg-warning text-dark">Quotes</span>
+      <a class="p-2" href="https://github.com/Evan-cell/angular-quotes"><button class="btn btn-info">Project link</button></a>
+    </div>
+  </div>
+</div>
+<footer class="bg-warning text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+  </div>
+  <!-- Copyright -->
+</footer>
 {%endblock%}
